@@ -60,6 +60,7 @@ Import and export data from multiple sources:
 | Excel | Multi-sheet support, cell type preservation |
 | ADO.NET | SQL Server, PostgreSQL, MySQL via standard .NET data access |
 | Web | HTML table extraction, CSS selectors, link parsing |
+| S3 | AWS and S3-compatible storage, automatic format detection, multi-segment streaming |
 
 ## Quick Example
 
@@ -85,7 +86,7 @@ Console.WriteLine(result.ToTextTable());
 
 ## Public Repositories
 
-The following components are available as open source:
+The following components have public repositories with documentation and samples:
 
 | Repository | Description |
 |------------|-------------|
@@ -94,6 +95,8 @@ The following components are available as open source:
 | [Datafication.Server.Core](https://github.com/DataficationSDK/Datafication.Server.Core) | Server API for exposing DataBlocks as RESTful endpoints |
 | [Datafication.ParquetConnector](https://github.com/DataficationSDK/Datafication.ParquetConnector) | Apache Parquet reading and writing |
 | [Datafication.CsvConnector](https://github.com/DataficationSDK/Datafication.CsvConnector) | CSV import/export with type inference |
+| [Datafication.WebConnector](https://github.com/DataficationSDK/Datafication.WebConnector) | Web scraping with HTML tables, CSS selectors, and browser rendering |
+| [Datafication.S3Connector](https://github.com/DataficationSDK/Datafication.S3Connector) | Amazon S3 and S3-compatible storage access |
 
 ## Beyond the Public Repos
 
@@ -136,6 +139,8 @@ dotnet add package Datafication.Storage.Velocity
 dotnet add package Datafication.Server.Core
 dotnet add package Datafication.CsvConnector
 dotnet add package Datafication.ParquetConnector
+dotnet add package Datafication.WebConnector
+dotnet add package Datafication.S3Connector
 ```
 
 ## Requirements
